@@ -23,8 +23,7 @@ ALTER TABLE Crowd_Control
 ADD Column Damange_Break Boolean
 DROP Column Character_Race
 RENAME Column CoolDown to Cooldown;
-
-*In case you make a typo, you can rename columns.*
+>In case you make a typo, you can rename columns.
 
 
 **> Add data values into the table**
@@ -47,7 +46,7 @@ Update Columns/Data	Update [Crowd_Control]
 Set Dispellable = 0
 Where Spell_Name = 'Cheap Shot';
 
-*If no “WHERE” is added, it will add the value 0 for all rows.*
+>If no “WHERE” is added, it will add the value 0 for all rows.
 
 **> Data Query**
 
@@ -75,13 +74,13 @@ VALUES
 (‘Trap’, ‘Hunter’, ‘All’, 24, ‘Incapacitate’)
 ;
 
-*If you are going to add info to all columns, you don’t need to specify the columns in the table.*
+> If you are going to add info to all columns, you don’t need to specify the columns in the table.
 
 **> Delete wrong input from table**
 
 DELETE FROM Crowd_Control
 WHERE Spell_Name=’Trap’
-*This does delete the whole row!*
+> This deletes the whole row!
 
 **Query**
 SELECT Class, CC_Type, Count(CC_Type) FROM [Crowd_Control]
