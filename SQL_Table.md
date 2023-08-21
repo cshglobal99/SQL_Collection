@@ -17,7 +17,15 @@ Column_1 datatype_n columnConstraint_n);
 > LastName varchar(255),  
 > FirstName varchar(255),
 > MiddleName varchar(255),   
-> Number int);
+> Number int); *-Number is vague, so later on we will rename this header*  
+
+>CREATE TABLE SkillSet( PersonID int,  
+> Software varchar(255) NOT NULL,  
+> Software Type varchar(255),
+> Description varchar(255),  
+>Ability TINYINT,  
+>FOREIGN KEY (PersonID) REFERENCES YourParentTable(PersonID) *- This enables a connection between Table_1 & Table_2*  
+>);
 
 ## Table_1 Adjustment
 ALTER TABLE Table_1  
