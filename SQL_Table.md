@@ -1,4 +1,5 @@
 # SQL_Table
+This document lists the general Syntax rules for SQL and some examples.
 
 ## Table Creation Syntax
 CREATE TABLE Table_1(  
@@ -11,7 +12,7 @@ Column_1 datatype_n columnConstraint_n);
 
 ' Where columnConstraint_1 := {NOT NULL, UNIQUE, PRIMARY KEY, FOREIGN KEY, CHECK, DEFAULT, CREATE INDEX, **AUTO_INCREMENT**)
 
-## Example
+### Example
 >CREATE TABLE Persons( PersonID int AUTO_INCREMENT,  
 > LastName varchar(255),  
 > FirstName varchar(255),
@@ -24,7 +25,7 @@ ADD COLUMN Column_add columnConstraint_add
 DROP COLUMN Column_delete  
 RENAME COLUMN Column_i to Column_j;  
 
-## Example
+### Example
 >ALTER TABLE Table_1  
 ADD COLUMN EmailAddress varchat(255)  
 DROP COLUMN MiddleName  
@@ -39,7 +40,7 @@ VALUES(
  (Value_n1, Value_n2,..., Value_nn));  
 
 
-## Example
+### Example
 > INSERT INTO Persons(LastName,FirstName, Phone, EmailAddress)  
 VALUES('Hickman',  
 'Christopher',  
