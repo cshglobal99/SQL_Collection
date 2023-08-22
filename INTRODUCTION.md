@@ -16,7 +16,7 @@ In this Markdown I will summarise the SQL Syntax for creating, deleting and edit
 > *CODE INSERT HERE*  
 
 
-### 3) SQL_Constraints
+### 3) [SQL_Constraints](https://github.com/cshglobal99/SQL_Collection/blob/main/SQL_Constraints.md)
 In this Markdown I will summarise the SQL Syntax for Constrains used for Tables/Databses in an easy to read and understand manner as well as share examples of code.  
 > *CODE INSERT HERE*  
 
