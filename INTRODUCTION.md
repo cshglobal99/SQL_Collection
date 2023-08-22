@@ -1,10 +1,12 @@
 # Welcome to my SQL Collection.
+**Buisiness Card**: Christopher Hickman [LinkedIn](https://www.linkedin.com/in/cshglobal99/)  
+email: [cshglobal99@gmail.com](mailto:cshcyp@gmail.com)
+
 **Last Update**: 22/08/2023  
 
 The purpose of this project is to show my SQL ability and record my development over time. I started learning SQL at the start of August 2023 from a Udemy cource online. However, I soon realised I had no evidence of ability to showcase. So I decided to research and found GitHub to be the platform to showcase and share code. My current interest is in Data Anlytics/Science and so far I am commiting to learning {EXCEL, VBA. SQL, GitHub, Obsidian, Pyhon}. *Ideally I can find a way to merge GitHub and Obsidian, but that is somewhat in the future.*  
 
-**Buisiness Card**: Christopher Hickman [LinkedIn](https://www.linkedin.com/in/cshglobal99/)  
-email: [cshglobal99@gmail.com](mailto:cshcyp@gmail.com)
+
 
 
 ### 1) [SQL_Table](https://github.com/cshglobal99/SQL_Collection/blob/main/SQL_Table.md)
