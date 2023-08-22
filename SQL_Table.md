@@ -11,9 +11,8 @@ Column_1 datatype_2 columnConstraint_2,
 ...,  
 Column_1 datatype_n columnConstraint_n);
 
-' Where datatype_1 := {String Data Types, Numeric Data Types, Date and Time Data Types, Other Data Types, MS Access Data Types}
-
-' Where columnConstraint_1 := {NOT NULL, UNIQUE, PRIMARY KEY, FOREIGN KEY, CHECK, DEFAULT, CREATE INDEX, **AUTO_INCREMENT**)
+*-Where datatype_1 := {String Data Types, Numeric Data Types, Date and Time Data Types, Other Data Types, MS Access Data Types}*  
+*-Where columnConstraint_1 := {NOT NULL, UNIQUE, PRIMARY KEY, FOREIGN KEY, CHECK, DEFAULT, CREATE INDEX, **AUTO_INCREMENT**)*
 
 ### Example
 >CREATE TABLE Persons( PersonID int AUTO_INCREMENT,  
