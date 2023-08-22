@@ -1,5 +1,6 @@
 # SQL_Table
-[SQL_Collection](https://github.com/cshglobal99/SQL_Collection/blob/main/INTRODUCTION.md)  
+[SQL_Collection](https://github.com/cshglobal99/SQL_Collection/blob/main/INTRODUCTION.md)
+
 This document lists the general Syntax rules for SQL and some examples.
 
 ## Table Creation Syntax
