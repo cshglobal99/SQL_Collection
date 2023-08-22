@@ -1,5 +1,5 @@
 # Welcome to my SQL Collection.
-Last Update: 22/08/2023  
+**Last Update**: 22/08/2023  
 
 The purpose of this project is to show my SQL ability and record my development over time. I started learning SQL at the start of August 2023 from a Udemy cource online. 
 
