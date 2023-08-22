@@ -11,7 +11,26 @@ email: [cshglobal99@gmail.com](mailto:cshcyp@gmail.com)
 
 ### 1) [SQL_Table](https://github.com/cshglobal99/SQL_Collection/blob/main/SQL_Table.md)
 In this Markdown I will summarise the SQL Syntax for creating, deleting and editing Tables in an easy to read and understand manner as well as share examples of code.  
-> *CODE INSERT HERE*  
+| **id** | **SectionHeader** | **Description** | **Nsubsections** |
+| :---: | :---: | :---: | :---: |
+| 1 | SQL_Table | Description_1 | 5 |
+| 2 | SQL_Database | Description_2 | 1 |
+
+> CREATE TABLE INTRODUCTION(  
+id SERIAL PRIMARY KEY,  
+SectionHeader VARCHAR(50),  
+Description VARCHAR(255),  
+Nsubsections int);
+
+| id | SectionHeader | Description | Nsubsections |
+| :---: | :---: | :---: | :---: |
+| 1 | SQL_Table | Description_1 | 5 |
+| 2 | SQL_Database | Description_2 | 1 |
+| 3 | SQL_Constraints | Description_3 | 3 |
+
+> INSERT INTO INTRODUCTION( SectionHeader, Description, Nsubsections)  
+> VALUES (SQL_Constraints, "Description_3", 3);  
+*Note that the "id" was not included as a value to be insereted as this is automatic due to the SERIAL Constraint. More on Constrains found below*
 
 ### 2) [SQL_Database](https://github.com/cshglobal99/SQL_Collection/blob/main/SQL_Database.md)
 In this Markdown I will summarise the SQL Syntax for creating, deleting and editing Databases in an easy to read and understand manner as well as share examples of code.  
