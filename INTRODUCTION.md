@@ -29,7 +29,7 @@ Nsubsections int);
 | 3 | SQL_Constraints | Description_3 | 3 |
 
 > INSERT INTO INTRODUCTION( SectionHeader, Description, Nsubsections)  
-> VALUES (SQL_Constraints, "Description_3", 3);  
+> VALUES ('SQL_Constraints', 'Description_3', 3);  
 *Note that the "id" was not included as a value to be insereted as this is automatic due to the SERIAL Constraint. More on Constrains found below*
 
 ### 2) [SQL_Database](https://github.com/cshglobal99/SQL_Collection/blob/main/SQL_Database.md)
