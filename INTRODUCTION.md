@@ -21,10 +21,10 @@ In this Markdown I will summarise the SQL Syntax for Constrains used for Tables/
 > *CODE INSERT HERE*  
 
  
-### 4) SQL_Queries
+### 4) [SQL_Queries](https://github.com/cshglobal99/SQL_Collection/blob/main/SQL_Queries.md)
 In this Markdown I will summarise the SQL Syntax for Queries.
 > *CODE INSERT HERE*  
 
-### 5) SQL_Advanced
+### 5) [SQL_Advanced](https://github.com/cshglobal99/SQL_Collection/blob/main/SQL_Advanced.md)
 **FUTURE DEVELOPMENT** This Markdown will contains code developed overtime showcasing more advanced abilities.
 > *CODE INSERT HERE*  
