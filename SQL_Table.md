@@ -15,9 +15,10 @@ Column_1 datatype_n columnConstraint_n);
 *-Where columnConstraint_1 := {NOT NULL, UNIQUE, PRIMARY KEY, FOREIGN KEY, CHECK, DEFAULT, CREATE INDEX, **AUTO_INCREMENT**)*
 
 ### Example
->CREATE TABLE Persons( PersonID int AUTO_INCREMENT,  
+>CREATE TABLE Persons(  
+>PersonID int AUTO_INCREMENT,  
 > LastName varchar(255),  
-> FirstName varchar(255),
+> FirstName varchar(255),  
 > MiddleName varchar(255),   
 > Number int); *-Number is vague, so later on we will rename this header*  
 
@@ -26,8 +27,7 @@ Column_1 datatype_n columnConstraint_n);
 > Software Type varchar(255),
 > Description varchar(255),  
 >Ability TINYINT,  
->FOREIGN KEY (PersonID) REFERENCES YourParentTable(PersonID) *- This enables a connection between Table_1 & Table_2*  
->);
+>FOREIGN KEY (PersonID) REFERENCES YourParentTable(PersonID)); *- This enables a connection between Table_1 & Table_2*  
 
 ## Table_1 Adjustment
 ALTER TABLE Table_1  
@@ -36,10 +36,13 @@ DROP COLUMN Column_delete
 RENAME COLUMN Column_i to Column_j;  
 
 ### Example
->ALTER TABLE Table_1  
+>ALTER TABLE Persons  
 ADD COLUMN EmailAddress varchat(255)  
 DROP COLUMN MiddleName  
-RENAME COLUMN Number to Phone;  
+RENAME COLUMN Number to Phone  
+ALTER COLUMN "PersonID" SET DATA TYPE SERIAL PRIMARY KEY;
+
+*Its worth mentioning that the "ALTER COLUMN" works only for SQL servers, for MYSQL you use "MODIFY COLUMN"*
 
 ## Add Values into Table_1
 INSERT INTO Table_1(*if empty it will include all columns*)  
@@ -55,7 +58,58 @@ VALUES(
 VALUES('Hickman',  
 'Christopher',  
 96893455,  
-cshglobal99@gmail.com');  
+'cshglobal99@gmail.com');  
+
+| Last Name | FirstName | Phone | EmailAddress |
+| --- | --- | --- | --- |
+| Hickman | Christopher | 96893455 | cshglobal99@gmail.com |
+
+
+
+## Adjust Values of Table_1
+Update Table_1  
+Set column_1 = value_x,  
+    column 2 = value_y  
+Where Condition;  
+
+### Example
+>UPDATE Suppliers  
+Set ContactName = 'Christopher Hickman',  
+    City = 'London',  
+    Country = 'UK'  
+WHERE SupplierID = 1;  
+
+## Delete Values of Table_1
+DELETE FROM Table_1  
+*This will delete all data in Table_1*  
+
+DELETE FROM Table_1  
+WHERE row_id = 1,  
+RETURNING row_id;  
+
+### Example
+
+
+## Join Tables
+The 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
