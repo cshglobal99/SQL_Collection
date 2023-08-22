@@ -11,7 +11,7 @@ email: [cshglobal99@gmail.com](mailto:cshcyp@gmail.com)
 In this Markdown I will summarise the SQL Syntax for creating, deleting and editing Tables in an easy to read and understand manner as well as share examples of code.  
 > *CODE INSERT HERE*  
 
-### 2) SQL_Database
+### 2) [SQL_Database](https://github.com/cshglobal99/SQL_Collection/blob/main/SQL_Database.md)
 In this Markdown I will summarise the SQL Syntax for creating, deleting and editing Databases in an easy to read and understand manner as well as share examples of code.  
 > *CODE INSERT HERE*  
 
