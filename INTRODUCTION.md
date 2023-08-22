@@ -2,11 +2,11 @@
 **Buisiness Card**: Christopher Hickman [LinkedIn](https://www.linkedin.com/in/cshglobal99/)  
 email: [cshglobal99@gmail.com](mailto:cshcyp@gmail.com)
 
+*The primary objective of this project is to demonstrate my proficiency in SQL while also documenting my progression over time. My journey into SQL commenced in early August 2023 when I enrolled in an online Udemy course. However, I quickly recognized the necessity of tangible evidence to showcase my newfound skills. In response, I embarked on a quest to identify a suitable platform, ultimately discovering GitHub as the ideal venue for sharing and exhibiting my code.*  
+
+*My current focal point lies in the realm of Data Analytics and Science. Presently, I am dedicated to mastering a range of tools and skills, including Excel, VBA, SQL, GitHub, and Python. This multifaceted approach aligns with my aspirations to cultivate a comprehensive skill set that underpins the field. As I look ahead, I'm also intrigued by the possibility of integrating GitHub with Obsidian, although I recognize that this endeavor may be a project for the future.*    
+
 **Last Update**: 22/08/2023  
-
-The purpose of this project is to show my SQL ability and record my development over time. I started learning SQL at the start of August 2023 from a Udemy cource online. However, I soon realised I had no evidence of ability to showcase. So I decided to research and found GitHub to be the platform to showcase and share code. My current interest is in Data Anlytics/Science and so far I am commiting to learning {EXCEL, VBA. SQL, GitHub, Obsidian, Pyhon}. *Ideally I can find a way to merge GitHub and Obsidian, but that is somewhat in the future.*  
-
-
 
 
 ### 1) [SQL_Table](https://github.com/cshglobal99/SQL_Collection/blob/main/SQL_Table.md)
