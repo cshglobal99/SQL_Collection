@@ -27,7 +27,9 @@ Column_1 datatype_n columnConstraint_n);
 > Software Type varchar(255),
 > Description varchar(255),  
 >Ability TINYINT,  
->FOREIGN KEY (PersonID) REFERENCES YourParentTable(PersonID)); *- This enables a connection between Table_1 & Table_2*  
+>FOREIGN KEY (PersonID) REFERENCES YourParentTable(PersonID));  
+
+*This enables a connection between Table_1 & Table_2*  
 
 ## Table_1 Adjustment
 ALTER TABLE Table_1  
@@ -42,15 +44,15 @@ DROP COLUMN MiddleName
 RENAME COLUMN Number to Phone  
 ALTER COLUMN "PersonID" SET DATA TYPE SERIAL PRIMARY KEY;
 
-*Its worth mentioning that the "ALTER COLUMN" works only for SQL servers, for MYSQL you use "MODIFY COLUMN"*
+*Its worth mentioning that the "ALTER COLUMN" works only for SQL servers, for MYSQL you use "MODIFY COLUMN".*
 
 ## Add Values into Table_1
 INSERT INTO Table_1(*if empty it will include all columns*)  
-VALUES(  
+VALUES  
  (Value_11, Value_12,..., Value_1n),  
  (Value_21, Value_22,..., Value_2n),  
  ...,  
- (Value_n1, Value_n2,..., Value_nn));  
+ (Value_n1, Value_n2,..., Value_nn);  
 
 
 ### Example
@@ -64,7 +66,7 @@ VALUES('Hickman',
 | --- | --- | --- | --- |
 | Hickman | Christopher | 96893455 | cshglobal99@gmail.com |
 
-
+*If you desire to add more values in one go, you simply (list your row),(then seperate by a coma and anther bracket for the next row).*
 
 ## Adjust Values of Table_1
 Update Table_1  
