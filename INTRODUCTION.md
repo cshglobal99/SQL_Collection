@@ -8,19 +8,23 @@ email: [cshglobal99@gmail.com](mailto:cshcyp@gmail.com)
 
 
 ### 1) [SQL_Table](https://github.com/cshglobal99/SQL_Collection/blob/main/SQL_Table.md)
-In this Markdown I will summarise the SQL Syntax in an easy to read and understand manner as well as share examples of code.  
+In this Markdown I will summarise the SQL Syntax for creating, deleting and editing Tables in an easy to read and understand manner as well as share examples of code.  
 > *CODE INSERT HERE*  
 
 ### 2) SQL_Database
-In this Markdown I will summarise the SQL Syntax in an easy to read and understand manner as well as share examples of code.  
+In this Markdown I will summarise the SQL Syntax for creating, deleting and editing Databases in an easy to read and understand manner as well as share examples of code.  
 > *CODE INSERT HERE*  
 
 
 ### 3) SQL_Constraints
-In this Markdown I will summarise the SQL Syntax in an easy to read and understand manner as well as share examples of code.  
+In this Markdown I will summarise the SQL Syntax for Constrains used for Tables/Databses in an easy to read and understand manner as well as share examples of code.  
 > *CODE INSERT HERE*  
 
  
 ### 4) SQL_Queries
-In this Markdown I will summarise the SQL Syntax in an easy to read and understand manner as well as share examples of code.  
+In this Markdown I will summarise the SQL Syntax for Queries.
+> *CODE INSERT HERE*  
+
+### 5) SQL_Advanced
+**FUTURE DEVELOPMENT** This Markdown will contains code developed overtime showcasing more advanced abilities.
 > *CODE INSERT HERE*  
