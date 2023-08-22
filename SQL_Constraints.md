@@ -30,6 +30,7 @@ White creating Constraints for tables we can make so that the id is not needed t
 
 *AUTO_INCREMENT is a keyword used in MySQL to specify that a column should automatically generate a unique value for each new row.*
 
+MATTERIAL BASED ON: [Link](https://www.w3schools.com/sql/sql_default.asp)
 
 | Previous | Home | Next |
 |  :---:         |     :---:      |           :---:   |
