@@ -1,6 +1,6 @@
 # PROJECT_1
 
-## Creation
+## Creation of Tables and connections/maintenance
 
 ### Table_1.1: products
 
