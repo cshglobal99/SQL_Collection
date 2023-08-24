@@ -2,7 +2,7 @@
 
 ## Creation
 
-### Table_1: products
+### Table_1.1: products
 
 To my knowledge a product table should hold neccesary information per product. Therefore the base should be the **product_name** and **costperunit**, as this is fundamentally the foundation of production cost.
 Furthermore, if we are to create the table with prudence, we may forsee that the cost might depend on the date of production.
@@ -28,7 +28,7 @@ Thus by creating an additional column called **product_id** we can create a prim
 | *CONSTRAINT* | PRIMARY KEY | NOT NULL   | NOT NULL  |   | NOT NULL  | NOT NULL  |   |   |
 
 
-### Table_1 Values
+### Table_1.1 Values
 Lets test that it works smoothly by adding a test values.
 
 >INSERT INTO products(production_date, product_name, description, costperunit, stock, markup, selling_price)  
@@ -45,6 +45,43 @@ Note that* **description**, **markup** and **selling_price** are not necessary a
 Alternatively, it may be better to opt in a developing_products table to reduce complextiy. Code can then be developed, so that, as soon as the developing_products.completion.value = 1 the row entry is then automatically added to the products table. This would create a seamless system for the sales_team to have access to what they are able sell and the manager can then create a queries connecting the sales table against the products table to see frequently stock levels.  
 
 [DEVELOPMENT OF UPDATING TABLES](https://github.com/cshglobal99/SQL_Collection/blob/main/5.SQL_Advanced.md#automatic-entries)
+
+### Table_1.2: developing_products
+
+Using the above code for updating tables we are able to link the cost of assisiated to development each product per item, to the table of developing projects in the development costs columns.
+
+| | product_id | product_name | latest_update | description | costperunit | stock |
+|----------|----------|----------|----------|----------|----------|----------|
+| *DATA TYPE*   | SERIAL   |  TEXT  | DATE   | VARCHAR(255)   | DECIMAL(10,2)   | INT    |
+| *CONSTRAINT* | PRIMARY KEY | NOT NULL   | NOT NULL  |   | NOT NULL  | NOT NULL  |
+
+**CODE FOR TABLE:**   
+>CREATE TABLE developing_products(  
+>product_id SERIAL,  
+>product_name TEXT NOT NULL,  
+>latest_update DATE NOT NULL,  
+>description TEXT,  
+>costperunit DECIMAL(10,2) NOT NULL,  
+>stock INT,
+>PRIMARY KEY(product_id));
+
+The goal of this table is for **latest_update** and **costperunit** to update using the SUM() function on the **development_costs** table. An easy to understand version can be found using the link further above.
+
+
+### Table_1.3: development_costs
+
+| | product_id | item_order_date | item | item_cost |
+|----------|----------|----------|----------|----------|
+| *DATA TYPE*   | INT   | DATE   | TEXT   |  INT  |
+| *CONSTRAINT* | *FOREIGN KEY & CHECK?* | NOT NULL   | NOT NULL  |
+
+**CODE FOR TABLE:**   
+>CREATE TABLE developing_products(  
+>product_id INT,  
+>item_order_date DATE NOT NULL,    
+>item TEXT NOT NULL,  
+>item_cost DECIMAL(10,2) NOT NULL,  
+>FOREIGN KEY(product_id) REFERENCES developing_products(product_id) );
 
 ### Table_2: sales
 
