@@ -32,7 +32,8 @@ Thus by creating an additional column called **product_id** we can create a prim
 Lets test that it works smoothly by adding a test values.
 
 >INSERT INTO products(production_date, product_name, description, costperunit, stock, markup, selling_price)  
->VALUES('2023-08-24','Lenovo Laptop', 'Lenovo Personal Laptop for day-to-day use', 1000, 1, 0.1 , 1100)
+>VALUES('2023-08-24','Lenovo Laptop', 'Lenovo Personal Laptop for day-to-day use', 1000, 1, 0.1 , 1100);
+>SELECT * FROM products;
 
 **The result:**
 | product_id | production_date | product_name | description | costperunit | stock | markup | selling_price   |
