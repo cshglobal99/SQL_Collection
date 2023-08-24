@@ -45,7 +45,7 @@ Lets test that it works smoothly by adding a test values.
 ### Table_2: sales
 
 >CREATE TABLE sales(  
->saled_id SERIAL PRIMARY KEY,  
+>sale_id SERIAL PRIMARY KEY,  
 >salesperson VARCHAR(100),
 
 
