@@ -108,7 +108,10 @@ Similarly we can also do this for the date, but instead of summing we want the m
 > PLACEHOLDER FOR CODE
 
 Finally we can also just ensure not costs were not covered by entering the query:
->
+>SELECT DevC.product_id  
+FROM development_costs AS DevC  
+LEFT JOIN developing_products AS DevP ON DevC.product_id = DevP.product_id  
+WHERE DevP.product_id IS NULL;  
 
 ### Table_2: sales
 
