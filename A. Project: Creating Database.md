@@ -1,0 +1,58 @@
+**PROJECT_1**
+
+# Creation
+
+## Table_1: products
+
+To my knowledge a product table should roughly hold basic neccesary information per product. Therefore the base should be the **product_name** and **costperunit**, as this is fundamentally the foundation of production cost.
+Furthermore, if we are to create the table with prudence, we may forsee that the cost might depend on the date of production.
+Thus by creating an additional column called **product_id** we can create a primary key unique to ensure no issues caused by overlaps in date or product.
+
+>CREATE TABLE products(  
+>product_id SERIAL,  
+>production_date DATE NOT NULL,  
+>product_name TEXT NOT NULL,  
+>description VARCHAR(255),  
+>costperunit DECIMAL(10,2) NOT NULL,  
+>stock INT NOT NULL,  
+>markup DECIMAL(3,2),  
+>selling_price DECIMAL(10,2),  
+>PRIMARY KEY (product_id)  
+>);
+
+**In summary, this is the layout:**  
+
+| | product_id | production_date | product_name | description | costperunit | stock | markup | selling_price   |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| *DATA TYPE*   | SERIAL   | DATE   | TEXT   | VARCHAR(255)   | DECIMAL(10,2)   | INT    | DECIMAL(3,2)   | DECIMAL(10,2)   |
+| *CONSTRAINT* | PRIMARY KEY | NOT NULL   | NOT NULL  |   | NOT NULL  | NOT NULL  |   |   |
+
+
+## Table_1 Values
+Lets test that it works smoothly by adding a test values.
+
+>INSERT INTO products(production_date, product_name, description, costperunit, stock, markup, selling_price)  
+>VALUES('2023-08-24','Lenovo Laptop', 'Lenovo Personal Laptop for day-to-day use', 1000, 1, 0.1 , 1100)
+
+**The result:**
+| | product_id | production_date | product_name | description | costperunit | stock | markup | selling_price   |
+|----------|----------|----------|----------|----------|----------|----------|----------|
+| 1   | 2023-08-24   | Lenovo Laptop   | Lenovo Personal Laptop for day-to-day use   | 1000   | 1    | 0.1   | 1100   |
+
+
+
+## Table_2: sales
+
+>CREATE TABLE sales(  
+>saled_id SERIAL PRIMARY KEY,  
+>salesperson VARCHAR(100),
+
+
+
+## Table_3: client_list
+
+
+
+
+
+## Table_4: sales_team
