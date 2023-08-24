@@ -4,7 +4,7 @@
 
 ### Table_1: products
 
-To my knowledge a product table should roughly hold basic neccesary information per product. Therefore the base should be the **product_name** and **costperunit**, as this is fundamentally the foundation of production cost.
+To my knowledge a product table should hold neccesary information per product. Therefore the base should be the **product_name** and **costperunit**, as this is fundamentally the foundation of production cost.
 Furthermore, if we are to create the table with prudence, we may forsee that the cost might depend on the date of production.
 Thus by creating an additional column called **product_id** we can create a primary key unique to ensure no issues caused by overlaps in date or product.
 
