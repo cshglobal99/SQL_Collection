@@ -1,5 +1,9 @@
 **PROJECT_1**
 
+<blockquote style="color: red; background-color: yellow;">
+This is a color-coded blockquote.
+</blockquote>
+
 # Creation
 
 ## Table_1: products
