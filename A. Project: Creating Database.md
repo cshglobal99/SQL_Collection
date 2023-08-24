@@ -53,10 +53,10 @@ Alternatively, it may be better to opt in a developing_products table to reduce 
 
 Using the above code for updating tables we are able to link the cost of assisiated to development each product per item, to the table of developing projects in the development costs columns.
 
-| | product_id | product_name | latest_update | description | costperunit | stock |
-|----------|----------|----------|----------|----------|----------|----------|
-| *DATA TYPE*   | SERIAL   |  TEXT  | DATE   | VARCHAR(255)   | DECIMAL(10,2)   | INT    |
-| *CONSTRAINT* | PRIMARY KEY | NOT NULL   | NOT NULL  |   | NOT NULL  | NOT NULL  |
+| | product_id | product_name | latest_update | description | costperunit | stock | complete |
+|----------|----------|----------|----------|----------|----------|----------|----------|
+| *DATA TYPE*   | SERIAL   |  TEXT  | DATE   | VARCHAR(255)   | DECIMAL(10,2)   | INT    | BOOLEAN    |
+| *CONSTRAINT* | PRIMARY KEY | NOT NULL   | NOT NULL  |   | NOT NULL  | NOT NULL  | NOT NULL  |
 
 **CODE FOR TABLE:**   
 >CREATE TABLE developing_products(  
@@ -65,7 +65,8 @@ Using the above code for updating tables we are able to link the cost of assisia
 >latest_update DATE NOT NULL,  
 >description TEXT,  
 >costperunit DECIMAL(10,2) NOT NULL,  
->stock INT,
+>stock INT
+>complete BOOLEAN NOT NULL, *- To link to the products table*  
 >PRIMARY KEY(product_id));
 
 The goal of this table is for **latest_update** and **costperunit** to update using the MAX()/SUM() function on the **development_costs** table. An easy to understand version can be found using the link further above.
