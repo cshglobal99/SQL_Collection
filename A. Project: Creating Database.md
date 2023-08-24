@@ -58,7 +58,6 @@ Using the above code for updating tables we are able to link the cost of assisia
 | *DATA TYPE*   | SERIAL   |  TEXT  | DATE   | VARCHAR(255)   | DECIMAL(10,2)   | INT    | BOOLEAN    |
 | *CONSTRAINT* | PRIMARY KEY | NOT NULL   | NOT NULL  |   | NOT NULL  | NOT NULL  | NOT NULL  |
 
-**CODE FOR TABLE:**   
 >CREATE TABLE developing_products(  
 >product_id SERIAL,  
 >product_name TEXT NOT NULL,  
@@ -78,8 +77,7 @@ The goal of this table is for **latest_update** and **costperunit** to update us
 |----------|----------|----------|----------|----------|
 | *DATA TYPE*   | INT   | DATE   | TEXT   |  INT  |
 | *CONSTRAINT* | *FOREIGN KEY & CHECK?* | NOT NULL   | NOT NULL  |
-
-**CODE FOR TABLE:**   
+ 
 >CREATE TABLE development_costs(  
 >product_id INT,  
 >item_order_date DATE NOT NULL,    
@@ -97,9 +95,20 @@ Although this will do the job of creating a key and table, using the developed c
 >FOREIGN KEY(product_id) REFERENCES developing_products(product_id),  
 >CHECK (product_id IN (SELECT product_id FROM developing_products));
 
-By adding this "CHECK" condition, we limit the avaiable values so that we can update the developing_products without missing data.
+By adding this "CHECK" condition, we limit the avaiable values so that we can update the developing_products without missing data. The updating code was developed [here](), grabbing the sum of **production_costs** from development_costs and inputting, where applicable, in the developing_products.
 
+>UPDATE developing_products AS DevP
+>SET production_cost = (
+>SELECT COALESCE( SUM(item_cost),0)
+>FROM development_costs AS DevC
+>WHERE DevC.product_id = DevP.product_id);
 
+Similarly we can also do this for the date, but instead of summing we want the max(item_order_date) as this will be our latest product development update.
+
+> PLACEHOLDER FOR CODE
+
+Finally we can also just ensure not costs were not covered by entering the query:
+>
 
 ### Table_2: sales
 
