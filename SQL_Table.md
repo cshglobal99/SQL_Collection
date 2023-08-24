@@ -1,5 +1,5 @@
 # SQL_Table
-[SQL_Collection](https://github.com/cshglobal99/SQL_Collection/blob/main/INTRODUCTION.md)
+[SQL_Collection](https://github.com/cshglobal99/SQL_Collection/blob/main/0.INTRODUCTION.md)
 
 Welcome to my SQL Table Markdown.
 This document lists the general Syntax rules for SQL and some examples.
@@ -13,7 +13,7 @@ Column_1 datatype_n columnConstraint_n);
 
 *-Where datatype_1 := {String Data Types, Numeric Data Types, Date and Time Data Types, Other Data Types, MS Access Data Types}*  
 *-Where columnConstraint_1 := {NOT NULL, UNIQUE, PRIMARY KEY, FOREIGN KEY, CHECK, DEFAULT, CREATE INDEX, **AUTO_INCREMENT**)*  
-**[More Information](https://github.com/cshglobal99/SQL_Collection/blob/main/SQL_Constraints.md)**
+**[More Information](https://github.com/cshglobal99/SQL_Collection/blob/main/3.SQL_Constraints.md)**
 
 ### Example
 >CREATE TABLE Persons(  
@@ -118,4 +118,4 @@ The
 
 | Previous | Home | Next |
 | :---         |     :---:      |          ---: |
-| N/A  |    [SQL Collection](https://github.com/cshglobal99/SQL_Collection/blob/main/INTRODUCTION.md) | [SQL_Database](https://github.com/cshglobal99/SQL_Collection/blob/main/SQL_Database.md)   |
+| N/A  |    [SQL Collection](https://github.com/cshglobal99/SQL_Collection/blob/main/0.INTRODUCTION.md) | [SQL_Database](https://github.com/cshglobal99/SQL_Collection/blob/main/2.SQL_Database.md)   |
