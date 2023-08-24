@@ -4,9 +4,12 @@
 
 ### Table_1.1: products
 
-To my knowledge a product table should hold neccesary information per product. Therefore the base should be the **product_name** and **costperunit**, as this is fundamentally the foundation of production cost.
-Furthermore, if we are to create the table with prudence, we may forsee that the cost might depend on the date of production.
-Thus by creating an additional column called **product_id** we can create a primary key unique to ensure no issues caused by overlaps in date or product.
+| product_name | description | costperunit |
+|----------|----------|----------|
+| TEXT   | VARCHAR(255)   | DECIMAL(10,2)   |
+
+To my knowledge a product table should hold neccesary information about each product. Therefore the basis should be the **product_name** and **costperunit**, as this is fundamentally the foundation of production cost.
+Furthermore, if we are to create the table with prudence, we may forsee that dependng on when the product was created the cost might vary. Throughout the years of production, different prices could be set for production and different 3rd parties could be used, as such product will never be constant nor constant cost. However, date cannot be our primary key as two products can be made on the same day. Thus by creating an additional column called **product_id** we can create a primary key unique to ensure no issues caused by overlaps in date or product.
 
 >CREATE TABLE products(  
 >product_id SERIAL,  
