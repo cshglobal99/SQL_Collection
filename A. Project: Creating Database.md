@@ -40,7 +40,7 @@ Lets test that it works smoothly by adding a test values.
 |----------|----------|----------|----------|----------|----------|----------|----------|
 | 1   | 2023-08-24   | Lenovo Laptop   | Lenovo Personal Laptop for day-to-day use   | 1000   | 1    | 0.1   | 1100   |
 
-*Note that* **description**, **markup** *and* **selling_price** *are not necessary and can be left empty. This was made this way as products might be created without havint their selling_price being determined. This way "IN DEVELOPMENT" products can also be included into the products table.*.  
+*Note that* **description**, **markup** *and* **selling_price** *are not necessary and can be left empty. The reasoning behind this was that some products may be tracked without having a* **selling_price** *yet. This way "IN DEVELOPMENT" products can also be included into the products table. I guess my fantasy of complexity relates the costperunit to be a varying value for in developemnt products; likewise the markup value could be a variable. Alternatively it may be better to opt in a developing_products table to reduce complextiy, and as soon as the developing_products.completion.value = 1 the row entry is then automatically added to the products table for the sales_team to have access to what they can sell.*  
 **This Marks the end of Table_1 creation**
 
 ### Table_2: sales
