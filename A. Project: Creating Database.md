@@ -35,7 +35,7 @@ Lets test that it works smoothly by adding a test values.
 >VALUES('2023-08-24','Lenovo Laptop', 'Lenovo Personal Laptop for day-to-day use', 1000, 1, 0.1 , 1100)
 
 **The result:**
-| | product_id | production_date | product_name | description | costperunit | stock | markup | selling_price   |
+| product_id | production_date | product_name | description | costperunit | stock | markup | selling_price   |
 |----------|----------|----------|----------|----------|----------|----------|----------|
 | 1   | 2023-08-24   | Lenovo Laptop   | Lenovo Personal Laptop for day-to-day use   | 1000   | 1    | 0.1   | 1100   |
 
