@@ -53,7 +53,7 @@ Alternatively, it may be better to opt in a developing_products table to reduce 
 
 Using the above code for updating tables we are able to link the cost of assisiated to development each product per item, to the table of developing projects in the development costs columns.
 
-| | product_id | product_name | latest_update | description | costperunit | stock | complete |
+| | product_id | product_name | latest_update | description | production_cost | stock | complete |
 |----------|----------|----------|----------|----------|----------|----------|----------|
 | *DATA TYPE*   | SERIAL   |  TEXT  | DATE   | VARCHAR(255)   | DECIMAL(10,2)   | INT    | BOOLEAN    |
 | *CONSTRAINT* | PRIMARY KEY | NOT NULL   | NOT NULL  |   | NOT NULL  | NOT NULL  | NOT NULL  |
@@ -63,7 +63,7 @@ Using the above code for updating tables we are able to link the cost of assisia
 >product_name TEXT NOT NULL,  
 >latest_update DATE NOT NULL,  
 >description TEXT,  
->costperunit DECIMAL(10,2) NOT NULL,  
+>production_cost DECIMAL(10,2) NOT NULL,  
 >stock INT
 >complete BOOLEAN NOT NULL, *- To link to the products table*  
 >PRIMARY KEY(product_id));
