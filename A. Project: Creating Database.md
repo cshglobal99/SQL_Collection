@@ -69,7 +69,7 @@ Using the above code for updating tables we are able to link the cost of assisia
 >complete BOOLEAN NOT NULL, *- To link to the products table*  
 >PRIMARY KEY(product_id));
 
-The goal of this table is for **latest_update** and **costperunit** to update using the MAX()/SUM() function on the **development_costs** table. An easy to understand version can be found using the link further above.
+The goal of this table is for **latest_update** and **costperunit** to update using the MAX()/SUM() function on the **development_costs** table, as well as, for when a **complete** entry is "TRUE" for that row to then be transfered into the products table (i.e. copied into products and delted from developing_products). An easy to understand version can be found using the link further above.
 
 
 ### Table_1.3: development_costs
