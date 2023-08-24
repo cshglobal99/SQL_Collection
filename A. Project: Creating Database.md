@@ -1,12 +1,8 @@
-**PROJECT_1**
+# PROJECT_1
 
-<blockquote style="color: red; background-color: yellow;">
-This is a color-coded blockquote.
-</blockquote>
+## Creation
 
-# Creation
-
-## Table_1: products
+### Table_1: products
 
 To my knowledge a product table should roughly hold basic neccesary information per product. Therefore the base should be the **product_name** and **costperunit**, as this is fundamentally the foundation of production cost.
 Furthermore, if we are to create the table with prudence, we may forsee that the cost might depend on the date of production.
@@ -32,7 +28,7 @@ Thus by creating an additional column called **product_id** we can create a prim
 | *CONSTRAINT* | PRIMARY KEY | NOT NULL   | NOT NULL  |   | NOT NULL  | NOT NULL  |   |   |
 
 
-## Table_1 Values
+### Table_1 Values
 Lets test that it works smoothly by adding a test values.
 
 >INSERT INTO products(production_date, product_name, description, costperunit, stock, markup, selling_price)  
@@ -46,7 +42,7 @@ Lets test that it works smoothly by adding a test values.
 
 
 
-## Table_2: sales
+### Table_2: sales
 
 >CREATE TABLE sales(  
 >saled_id SERIAL PRIMARY KEY,  
@@ -54,10 +50,10 @@ Lets test that it works smoothly by adding a test values.
 
 
 
-## Table_3: client_list
+### Table_3: client_list
 
 
 
 
 
-## Table_4: sales_team
+### Table_4: sales_team
