@@ -40,9 +40,9 @@ Lets test that it works smoothly by adding a test values.
 |----------|----------|----------|----------|----------|----------|----------|----------|
 | 1   | 2023-08-24   | Lenovo Laptop   | Lenovo Personal Laptop for day-to-day use   | 1000   | 1    | 0.1   | 1100   |
 
-*Note that* **description**, **markup** *and* **selling_price** *are not necessary and can be left empty. The reasoning behind this was that some products may be tracked without having a* **selling_price**. *This way "IN DEVELOPMENT" products can also be included into the products table. I guess my fantasy of complexity relates the costperunit to be a varying value for in developemnt products; likewise, the markup value could be a variable.
+*Note that* **description**, **markup** *and* **selling_price** *are not necessary and can be left empty. The reasoning behind this was that some products may be tracked without having a* **selling_price**. *This way "IN DEVELOPMENT" products can also be included into the products table. I guess my fantasy of complexity relates the costperunit to be a varying value for in developemnt products; likewise, the markup value could be a variable.*  
 
-Alternatively, it may be better to opt in a developing_products table to reduce complextiy, and as soon as the developing_products.completion.value = 1 the row entry is then automatically added to the products table for the sales_team to have access to what they can sell.*  
+*Alternatively, it may be better to opt in a developing_products table to reduce complextiy. Code can then be developed, so that, as soon as the developing_products.completion.value = 1 the row entry is then automatically added to the products table. This would create a seamless system for the sales_team to have access to what they are able sell and the manager can then create a queries connecting the sales table against the products table to see frequently stock levels.*  
 
 **This Marks the end of Table_1 creation**
 
