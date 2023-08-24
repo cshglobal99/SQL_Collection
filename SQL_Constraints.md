@@ -28,6 +28,29 @@ White creating Constraints for tables we can make so that the id is not needed t
     Description VARCHART(255)  
 );  
 
+## 4 CONSTRAINTS
+
+### 4.5 KEYS
+
+
+### 4.6 CHECK
+
+>CREATE TABLE clientlist(  
+client_id SERIAL PRIMARY KEY,  
+client_name VARCHAR(255),  
+email VARCHAR(100),  
+phone_number VARCHAR(15),  
+country varchar(50),  
+relation_quality TEXT,  
+CHECK (relationquality = 'good' OR relationquality = 'bad')  
+);
+
+The example above demonstrates the creation of a client table that that only the values "good" or "bad" are input into relation_quality.
+
+
+
+## Extra Info
+
 *AUTO_INCREMENT is a keyword used in MySQL to specify that a column should automatically generate a unique value for each new row.*
 
 MATTERIAL BASED ON: [Link](https://www.w3schools.com/sql/sql_default.asp)
