@@ -44,8 +44,6 @@ Note that* **description**, **markup** and **selling_price** are not necessary a
 
 Alternatively, it may be better to opt in a developing_products table to reduce complextiy. Code can then be developed, so that, as soon as the developing_products.completion.value = 1 the row entry is then automatically added to the products table. This would create a seamless system for the sales_team to have access to what they are able sell and the manager can then create a queries connecting the sales table against the products table to see frequently stock levels.  
 
-**This Marks the end of Table_1 creation**
-
 ### Table_2: sales
 
 >CREATE TABLE sales(  
