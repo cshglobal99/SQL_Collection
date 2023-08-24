@@ -95,23 +95,41 @@ Although this will do the job of creating a key and table, using the developed c
 >FOREIGN KEY(product_id) REFERENCES developing_products(product_id),  
 >CHECK (product_id IN (SELECT product_id FROM developing_products));
 
-By adding this "CHECK" condition, we limit the avaiable values so that we can update the developing_products without missing data. The updating code was developed [here](), grabbing the sum of **production_costs** from development_costs and inputting, where applicable, in the developing_products.
+By adding this "CHECK" condition, we limit the avaiable values so that we can update the developing_products without missing data.
 
->UPDATE developing_products AS DevP
->SET production_cost = (
->SELECT COALESCE( SUM(item_cost),0)
->FROM development_costs AS DevC
->WHERE DevC.product_id = DevP.product_id);
+### Table_1.2 Updating developing_products
+The updating code was developed [here](), grabbing the sum of **production_costs** from development_costs and inputting, where applicable, in the developing_products.
+
+>UPDATE developing_products AS DevP  
+>SET production_cost = (  
+>SELECT COALESCE( SUM(item_cost),0)  
+>FROM development_costs AS DevC  
+>WHERE DevC.product_id = DevP.product_id);  
 
 Similarly we can also do this for the date, but instead of summing we want the max(item_order_date) as this will be our latest product development update.
 
 > PLACEHOLDER FOR CODE
 
+
 Finally we can also just ensure not costs were not covered by entering the query:
+
 >SELECT DevC.product_id  
 FROM development_costs AS DevC  
 LEFT JOIN developing_products AS DevP ON DevC.product_id = DevP.product_id  
 WHERE DevP.product_id IS NULL;  
+
+### Table 1.3 Updating products
+
+> Code wtill not use Update but instead will only join
+
+
+
+
+
+
+
+
+
 
 ### Table_2: sales
 
