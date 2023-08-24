@@ -68,7 +68,7 @@ Using the above code for updating tables we are able to link the cost of assisia
 >stock INT,
 >PRIMARY KEY(product_id));
 
-The goal of this table is for **latest_update** and **costperunit** to update using the SUM() function on the **development_costs** table. An easy to understand version can be found using the link further above.
+The goal of this table is for **latest_update** and **costperunit** to update using the MAX()/SUM() function on the **development_costs** table. An easy to understand version can be found using the link further above.
 
 
 ### Table_1.3: development_costs
