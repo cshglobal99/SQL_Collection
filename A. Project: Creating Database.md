@@ -87,7 +87,7 @@ The goal of this table is for **latest_update** and **costperunit** to update us
 
 Although this will do the job of creating a key and table, using the developed code, we would still be able to enter costs even if developing_products have been transfered over to products. This we need to add a CHECK that will ensure we cannot add a unuvailable product_id (i.e. Developung product 5 has officially been released as product 5. If a new "cost" is found, this should not be included in the development_costs but instead directly to the product's table. We can create this data validation through a CHECK condition).
 
->>CREATE TABLE development_costs(  
+>CREATE TABLE development_costs(  
 >product_id INT,  
 >item_order_date DATE NOT NULL,    
 >item TEXT NOT NULL,  
@@ -96,6 +96,24 @@ Although this will do the job of creating a key and table, using the developed c
 >CHECK (product_id IN (SELECT product_id FROM developing_products));
 
 By adding this "CHECK" condition, we limit the avaiable values so that we can update the developing_products without missing data.
+**In actuality, this CHECK condition does not work on all databases. On my local database it didn't work. I decided to ask ChatGPT and got this Python code.**
+>>def insert_development_cost(product_id, item_order_date, item, item_cost):  
+    # Check if the product_id exists in the developing_products table  
+    if check_product_id_exists(product_id):  
+        # Insert the record into development_costs  
+        insert_record_into_development_costs(product_id, item_order_date, item, item_cost)  
+    else:  
+        print("Product ID does not exist in developing_products")
+def check_product_id_exists(product_id):  
+    # Query the developing_products table to check if the product_id exists  
+    # Return True if found, False otherwise  
+    return query_developing_products_for_product_id(product_id)
+def query_developing_products_for_product_id(product_id):  
+    # Execute SQL query to check if product_id exists in developing_products  
+    # Return True if found, False otherwise  
+
+**Maybe this can help someone**
+
 
 ### Table_1.2 Updating developing_products
 The updating code was developed [here](), grabbing the sum of **production_costs** from development_costs and inputting, where applicable, in the developing_products.
