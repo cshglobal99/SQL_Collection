@@ -80,12 +80,26 @@ The goal of this table is for **latest_update** and **costperunit** to update us
 | *CONSTRAINT* | *FOREIGN KEY & CHECK?* | NOT NULL   | NOT NULL  |
 
 **CODE FOR TABLE:**   
->CREATE TABLE developing_products(  
+>CREATE TABLE development_costs(  
 >product_id INT,  
 >item_order_date DATE NOT NULL,    
 >item TEXT NOT NULL,  
 >item_cost DECIMAL(10,2) NOT NULL,  
->FOREIGN KEY(product_id) REFERENCES developing_products(product_id) );
+>FOREIGN KEY(product_id) REFERENCES developing_products(product_id));
+
+Although this will do the job of creating a key and table, using the developed code, we would still be able to enter costs even if developing_products have been transfered over to products. This we need to add a CHECK that will ensure we cannot add a unuvailable product_id (i.e. Developung product 5 has officially been released as product 5. If a new "cost" is found, this should not be included in the development_costs but instead directly to the product's table. We can create this data validation through a CHECK condition).
+
+>>CREATE TABLE development_costs(  
+>product_id INT,  
+>item_order_date DATE NOT NULL,    
+>item TEXT NOT NULL,  
+>item_cost DECIMAL(10,2) NOT NULL,  
+>FOREIGN KEY(product_id) REFERENCES developing_products(product_id),  
+>CHECK (product_id IN (SELECT product_id FROM developing_products));
+
+By adding this "CHECK" condition, we limit the avaiable values so that we can update the developing_products without missing data.
+
+
 
 ### Table_2: sales
 
