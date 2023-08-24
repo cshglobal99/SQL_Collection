@@ -40,6 +40,7 @@ Lets test that it works smoothly by adding a test values.
 |----------|----------|----------|----------|----------|----------|----------|----------|
 | 1   | 2023-08-24   | Lenovo Laptop   | Lenovo Personal Laptop for day-to-day use   | 1000   | 1    | 0.1   | 1100   |
 
+*Note that* **description**, **markup** *and* **selling_price** *are not necessary and can be left empty. This was made this way as products might be created without havint their selling_price being determined. This way "IN DEVELOPMENT" products can also be included into the products table.*.  
 **This Marks the end of Table_1 creation**
 
 ### Table_2: sales
