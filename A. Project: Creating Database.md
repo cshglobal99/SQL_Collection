@@ -40,7 +40,7 @@ Lets test that it works smoothly by adding a test values.
 |----------|----------|----------|----------|----------|----------|----------|----------|
 | 1   | 2023-08-24   | Lenovo Laptop   | Lenovo Personal Laptop for day-to-day use   | 1000   | 1    | 0.1   | 1100   |
 
-
+**This Marks the end of Table_1 creation**
 
 ### Table_2: sales
 
